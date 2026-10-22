@@ -14,8 +14,16 @@
   }
 
   button:hover {
-    background-color: #5000ca;
+    background-color: #ff6b00;
     color: white;
+  }
+
+  .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #ff6b00 !important;
+  }
+
+  .MuiInputLabel-root.Mui-focused {
+    color: #ff6b00 !important;
   }
 
   fieldset {

@@ -36,3 +36,12 @@
         color: rgb(39, 40, 34);
     }
 }
+
+.light-mode {
+    .vertical-timeline-element-icon {
+        background: #505050 !important;
+        svg {
+            color: white;
+        }
+    }
+}

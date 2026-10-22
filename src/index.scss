@@ -24,7 +24,7 @@ a {
 }
 
 a:hover {
-  color: #5000ca;
+  color: #ff6b00;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
@@ -104,7 +104,7 @@ p, a, h1, h2, h3, h4, h5, label, button {
   }
 
   a:hover {
-    color: #5000ca;
+    color: #e65100;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
   }
 
@@ -141,8 +141,37 @@ p, a, h1, h2, h3, h4, h5, label, button {
     border-right: 7px solid rgba(0, 0, 0, 0.08) !important;
   }
 
+  .vertical-timeline-element-icon {
+    background: #505050 !important;
+  }
+
   .flex-chips .chip-title {
     color: #0d1116;
+  }
+
+  .project-tabs {
+    .project-tab-btn {
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      background-color: rgba(0, 0, 0, 0.04);
+      color: #333333;
+
+      &:hover {
+        color: #e65100;
+        border-color: #ff6b00;
+        background-color: rgba(255, 107, 0, 0.08);
+      }
+
+      &.active {
+        background-color: #ff6b00;
+        color: #ffffff;
+        border-color: #ff6b00;
+        box-shadow: 0 4px 12px rgba(255, 107, 0, 0.35);
+      }
+    }
+  }
+
+  .no-projects-msg {
+    color: #555555;
   }
 }
 

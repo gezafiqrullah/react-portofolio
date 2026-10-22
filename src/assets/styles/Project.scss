@@ -4,6 +4,44 @@
     padding: 5% 10%;
     text-align: left;
 }
+
+.project-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    align-items: center;
+
+    .project-tab-btn {
+        padding: 9px 22px;
+        font-size: 0.95rem;
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+        border-radius: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.05);
+        color: rgba(255, 255, 255, 0.85);
+        cursor: pointer;
+        transition: all 0.25s ease-in-out;
+        outline: none;
+
+        &:hover {
+            color: #ff6b00;
+            border-color: #ff6b00;
+            background-color: rgba(255, 107, 0, 0.08);
+            transform: translateY(-2px);
+        }
+
+        &.active {
+            background-color: #ff6b00;
+            color: #ffffff;
+            border-color: #ff6b00;
+            box-shadow: 0 4px 15px rgba(255, 107, 0, 0.38);
+            transform: translateY(-2px);
+        }
+    }
+}
   
 .projects-container .projects-grid {
     display: grid;
@@ -13,6 +51,25 @@
   
 .projects-container .projects-grid .project {
     text-align: left;
+    animation: fadeInProject 0.35s ease-in-out;
+}
+
+@keyframes fadeInProject {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.no-projects-msg {
+    grid-column: 1 / -1;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 30px 0;
 }
   
 .project h2:hover {
@@ -36,6 +93,14 @@
             display: block;
             padding-left: 5%;
             padding-right: 5%;
+        }
+
+        .project-tabs {
+            gap: 8px;
+            .project-tab-btn {
+                padding: 7px 16px;
+                font-size: 0.85rem;
+            }
         }
   
         .projects-container .projects-grid {

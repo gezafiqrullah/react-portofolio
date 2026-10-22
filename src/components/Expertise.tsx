@@ -1,44 +1,47 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faWordpress } from '@fortawesome/free-brands-svg-icons';
+import { faMobileScreenButton } from '@fortawesome/free-solid-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
+    "CodeIgniter",
     "React",
-    "TypeScript",
+    "PHP",
     "JavaScript",
+    "TypeScript",
     "HTML5",
     "CSS3",
-    "SASS",
-    "Flask",
-    "Python",
-    "SQL",
-    "PostgreSQL",
+    "Bootstrap",
+    "MySQL",
+    "REST API",
     "Postman"
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+    "WordPress",
+    "PHP",
+    "Elementor",
+    "WooCommerce",
+    "Custom Themes",
+    "Plugins",
+    "MySQL",
+    "cPanel",
+    "SEO"
 ];
 
 const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+    "React Native",
+    "Android",
+    "iOS",
+    "JavaScript",
+    "TypeScript",
+    "Expo",
+    "Redux",
+    "REST API",
+    "Mobile UI/UX"
 ];
 
 function Expertise() {
@@ -49,8 +52,8 @@ function Expertise() {
             <div className="skills-grid">
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <h3>Web Development (CodeIgniter & React)</h3>
+                    <p>I build dynamic, responsive, and secure web applications using CodeIgniter (PHP) and modern React.js frontend architecture. Proficient in full-stack integration, RESTful APIs, and database design.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -60,9 +63,9 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <FontAwesomeIcon icon={faWordpress} size="3x"/>
+                    <h3>WordPress & CMS Development</h3>
+                    <p>I develop customized, high-performance websites using the WordPress CMS. Experienced in custom themes and plugin development, page builders like Elementor, WooCommerce stores, and SEO optimization.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
@@ -72,9 +75,9 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                    <FontAwesomeIcon icon={faMobileScreenButton} size="3x"/>
+                    <h3>Mobile App Development (React Native)</h3>
+                    <p>I design and engineer cross-platform mobile applications for Android and iOS using React Native. Focused on delivering fluid UI/UX, robust state management, and seamless native device integrations.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (
